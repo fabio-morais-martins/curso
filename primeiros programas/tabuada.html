@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+	document.write("<br>");	
+	document.write("<br>");	
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+
+ 
+ var numero2 = 0;
+var numero1 = parseInt(prompt(" TABUADA DO ?  "));
+
+
+if(numero1 > 0){
+
+	while(numero2 <= 9){
+	 document.write(1+numero2++ +" x "+ numero1 +" = "); 
+	 let calculo = numero2 * numero1;
+	 mostra(calculo);
+	} 
+		  
+}else{mostra('SOMENTE NUMEROS ENTRE 0 E 9');}
+
+
+/*while(numero1 <= 10){
+      
+    mostra(7 * numero1);
+    numero1 = numero1 + 1
+}*/
+
+
+
+</script>

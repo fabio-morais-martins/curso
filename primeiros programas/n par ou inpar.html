@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){document.write("<br>"); document.write("<br>")}
+function mostra(frase){document.write(frase); pulaLinha()}
+function somaTudo(numero){mostra(numero+numero)}
+
+function filtro(numeros){
+  if (numeros % 2 == 0) {
+ mostra(numeros + " é um numero PAR");
+ 
+ 
+ }else{
+  mostra(numeros + " é um numero IMPAR");
+ }
+}
+
+var numDepessoas = parseInt(prompt("quantos numeros ?"));
+
+
+
+var numero = 1;
+var totalIdades = 0;
+
+ while(numero <= numDepessoas){
+ 	var idade = parseInt(prompt(numero + "° numero "));
+ 	totalIdades = totalIdades + idade;
+ 	numero++;
+ 	filtro(idade);
+            
+    }
+
+    
+var media = totalIdades / numDepessoas;
+
+mostra("a media é " + media)
+mostra("!!FIM!!")
+console.log("ola")
+</script>
